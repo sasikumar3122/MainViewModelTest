@@ -1,13 +1,20 @@
 package com.example.mainviewmodeltest
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class TestViewModel : ViewModel() {
-    var number = 0
+class TestViewModel(private val initial : Int) : ViewModel() {
+    var number : MutableLiveData<Int> = MutableLiveData(initial)
 
-    val currentNumber : MutableLiveData<Int> by lazy {
-        MutableLiveData<Int>()
+    /*fun getNumber() : LiveData<Int> {
+        val liveData: LiveData<Int> = MutableLiveData(number)
+        return liveData
+    }*/
+
+    fun add(int: Int) =number.value?.let{
+        number.setValue(it+int)
+
     }
 
 }

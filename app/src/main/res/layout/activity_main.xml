@@ -11,13 +11,7 @@
         android:id="@+id/text1"
         android:layout_width="350dp"
         android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="41dp"
+        android:layout_centerInParent="true"
         android:layout_marginRight="20dp"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -28,25 +22,21 @@
     <Button
         android:id="@+id/btn_addOne"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/text1"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="80dp"
         android:layout_marginTop="54dp"
-        android:layout_marginBottom="250dp"
         android:text="ADD +1" />
 
     <Button
         android:id="@+id/btn_addTwo"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/text1"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginTop="54dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="250dp"
         android:text="ADD +2" />
 </RelativeLayout>
 
